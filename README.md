@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Resume UI - Shubham Nevare
 
-## Getting Started
+**Name:** Shubham Nevare  
+**Role Applied For:** UI Developer Intern at Platione
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[View Live Site](https://your-github-username.github.io/resumeui) *(Update with your actual hosted URL)*
+
+## 📸 Screenshots
+
+![Desktop View](./screenshots/desktop.png)
+![Mobile View](./screenshots/mobile.png)
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16
+- **Styling:** Tailwind CSS 4
+- **Language:** JavaScript (React)
+- **Data:** Static JSON
+
+## ✨ Features
+
+- Pixel-perfect, modern, professional design
+- Fully responsive (mobile, tablet, desktop)
+- Component-based architecture
+- Resume data rendered from single JSON file
+- Smooth animations and micro-interactions
+- Accessible (good contrast, focus states)
+- Clean, maintainable code
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles & CSS variables
+│   ├── layout.js        # Root layout
+│   └── page.jsx         # Main page
+├── components/
+│   ├── Header.jsx       # Navigation header
+│   ├── Hero.jsx         # Hero/About section
+│   ├── Education.jsx    # Education timeline
+│   ├── Projects.jsx     # Project cards
+│   ├── Skills.jsx       # Skills & tools
+│   ├── Achievements.jsx # Achievements & extracurricular
+│   ├── Contact.jsx      # Contact information
+│   └── Footer.jsx       # Footer
+└── data/
+    └── resume.json      # All resume data
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏃 How to Run
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubham-Nevare/resumeui.git
+   cd resumeui
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Run development server:
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Build for Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm run start
+```
 
-## Deploy on Vercel
+## 🌐 Deploy to GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Update `next.config.mjs` for static export
+2. Run `npm run build`
+3. Deploy the `out` folder to GitHub Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+
+MIT License - Feel free to use this template for your own resume!

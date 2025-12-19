@@ -1,0 +1,126 @@
+export default function Hero({ personal, portfolio }) {
+  return (
+    <section id="about" className="min-h-screen flex items-center pt-20 pb-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="order-2 lg:order-1 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-light rounded-full text-accent text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+              Available for opportunities
+            </div>
+            
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-4 leading-tight">
+              Hi, I'm{' '}
+              <span className="gradient-text">{personal.name}</span>
+            </h1>
+            
+            <h2 className="text-xl sm:text-2xl text-text-secondary font-medium mb-6">
+              {personal.role}
+            </h2>
+            
+            <p className="text-text-secondary text-lg mb-8 max-w-xl leading-relaxed">
+              {personal.summary}
+            </p>
+
+            {/* Contact Info */}
+            <div className="flex flex-wrap gap-4 mb-8">
+              <a
+                href={`mailto:${personal.email}`}
+                className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                {personal.email}
+              </a>
+              <a
+                href={`tel:${personal.phone}`}
+                className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                {personal.phone}
+              </a>
+              <span className="flex items-center gap-2 text-text-secondary">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                {personal.location}
+              </span>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-3 mb-4">
+              <a
+                href={portfolio.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-xl hover:bg-accent-hover transition-all hover:shadow-lg hover:shadow-accent/25"
+              >
+                View Portfolio
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-border text-text-primary font-medium rounded-xl hover:border-accent hover:text-accent transition-all"
+              >
+                Get in Touch
+              </a>
+            </div>
+
+            {/* Resume Buttons */}
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://drive.google.com/file/d/1rTMAFNfPogKT4msJZe6EvIIEuhE-vUu_/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-xl transition-all hover:shadow-lg hover:-translate-y-0.5"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                View Resume
+              </a>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1rTMAFNfPogKT4msJZe6EvIIEuhE-vUu_"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium rounded-xl transition-all hover:shadow-lg hover:shadow-purple-500/25 hover:-translate-y-0.5"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                Download Resume
+              </a>
+            </div>
+          </div>
+
+          {/* Photo */}
+          <div className="order-1 lg:order-2 flex justify-center animate-fade-in delay-200">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent to-purple-500 rounded-3xl blur-2xl opacity-20 scale-110"></div>
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border-4 border-white shadow-2xl">
+                <img 
+                  src={personal.photo} 
+                  alt={personal.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* SN Icon Badge */}
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-br from-accent to-purple-500 rounded-2xl flex items-center justify-center shadow-xl border-4 border-white">
+                <span className="text-2xl font-bold text-white">SN</span>
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-accent/10 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
