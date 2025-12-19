@@ -5,23 +5,21 @@
         "location": "Mumbai, India",
         "email": "Snevare9@gmail.com",
         "phone": "+91 7758875837",
-        "photo": "/ShubhamPhoto3.jpg",
+        "photo": "/ShubhamPhoto3.JPG",
         "summary": "Passionate Frontend Developer with expertise in building modern, responsive web applications. Skilled in React, Next.js, and creating pixel-perfect user interfaces with attention to detail and best practices."
     },
-    "experience": [
-        {
-            "company": "Schbang Digital Solutions",
-            "role": "Frontend Developer Intern",
-            "duration": "April 2025 - Oct 2025",
-            "description": "Working on building modern, responsive web applications and user interfaces.",
-            "responsibilities": [
-                "Developing responsive UI components using React and Next.js",
-                "Collaborating with design team to implement pixel-perfect interfaces",
-                "Optimizing web performance and ensuring cross-browser compatibility"
-            ],
-            "tech": ["React", "Next.js", "Tailwind CSS", "JavaScript"]
-        }
-    ],
+    "experience": [{
+        "company": "Schbang Digital Solutions",
+        "role": "Frontend Developer Intern",
+        "duration": "April 2025 - Oct 2025",
+        "description": "Working on building modern, responsive web applications and user interfaces.",
+        "responsibilities": [
+            "Developing responsive UI components using React and Next.js",
+            "Collaborating with design team to implement pixel-perfect interfaces",
+            "Optimizing web performance and ensuring cross-browser compatibility"
+        ],
+        "tech": ["React", "Next.js", "Tailwind CSS", "JavaScript"]
+    }],
     "portfolio": {
         "website": "https://shubhamnevare.vercel.app/",
         "github": "https://github.com/Shubham-Nevare",
