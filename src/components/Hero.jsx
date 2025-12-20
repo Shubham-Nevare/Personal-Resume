@@ -106,12 +106,12 @@ export default function Hero({ personal, portfolio }) {
           </div>
         </div>
         {/* CTA / Resume Buttons */}
-        <div className="flex flex-wrap gap-4  mb-4">
+        <div className="flex flex-col sm:flex-row gap-4 mb-4 items-stretch sm:items-center">
           <a
             href={portfolio.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-accent to-purple-600 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-1 hover:scale-105 active:scale-95"
+            className="group inline-flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 sm:px-8 sm:py-3.5 bg-gradient-to-r from-accent to-purple-600 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-1 hover:scale-105 active:scale-95"
           >
             <span>View Portfolio</span>
             <svg
@@ -132,7 +132,7 @@ export default function Hero({ personal, portfolio }) {
             href="https://drive.google.com/file/d/1rTMAFNfPogKT4msJZe6EvIIEuhE-vUu_/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-gray-800 to-gray-900 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-gray-800/30 hover:-translate-y-1 hover:scale-105 active:scale-95 border border-gray-700/50 hover:border-gray-600"
+            className="group inline-flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 sm:px-8 sm:py-3.5 bg-gradient-to-r from-gray-800 to-gray-900 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-gray-800/30 hover:-translate-y-1 hover:scale-105 active:scale-95 border border-gray-700/50 hover:border-gray-600"
           >
             <svg
               className="w-5 h-5 transition-transform duration-300 group-hover:scale-110"
@@ -152,7 +152,7 @@ export default function Hero({ personal, portfolio }) {
           <a
             href="https://drive.google.com/uc?export=download&id=1rTMAFNfPogKT4msJZe6EvIIEuhE-vUu_"
             download
-            className="group inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/40 hover:-translate-y-1 hover:scale-105 active:scale-95 relative overflow-hidden"
+            className="group inline-flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 sm:px-8 sm:py-3.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/40 hover:-translate-y-1 hover:scale-105 active:scale-95 relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <svg
@@ -172,7 +172,7 @@ export default function Hero({ personal, portfolio }) {
           </a>
           <a
             href="#contact"
-            className="group inline-flex items-center gap-2 px-8 py-3.5 border-2 border-accent/30 text-text-primary font-semibold rounded-xl transition-all duration-300 hover:border-accent hover:text-accent hover:bg-accent/5 hover:shadow-lg hover:-translate-y-1 hover:scale-105 active:scale-95"
+            className="group inline-flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 sm:px-8 sm:py-3.5 border-2 border-accent/30 text-text-primary font-semibold rounded-xl transition-all duration-300 hover:border-accent hover:text-accent hover:bg-accent/5 hover:shadow-lg hover:-translate-y-1 hover:scale-105 active:scale-95"
           >
             <span>Get in Touch</span>
             <svg

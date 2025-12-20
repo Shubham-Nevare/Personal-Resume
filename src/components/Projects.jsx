@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const ITEMS_PER_ROW = 3;
 const INITIAL_ROWS = 2;
@@ -8,6 +8,7 @@ const INITIAL_ROWS = 2;
 export default function Projects({ projects }) {
   const [activeFilter, setActiveFilter] = useState('all');
   const [showAll, setShowAll] = useState(false);
+  const [initialCount, setInitialCount] = useState(ITEMS_PER_ROW * INITIAL_ROWS);
 
   const categories = [
     { key: 'all', label: 'All Projects' },
@@ -19,11 +20,24 @@ export default function Projects({ projects }) {
     ? projects 
     : projects.filter(p => p.category === activeFilter);
 
-  const visibleProjects = showAll 
-    ? filteredProjects 
-    : filteredProjects.slice(0, ITEMS_PER_ROW * INITIAL_ROWS);
+  useEffect(() => {
+    // Tailwind `sm` breakpoint is 640px; matchMobile for <640
+    const mq = window.matchMedia('(max-width: 639px)');
+    const update = () => setInitialCount(mq.matches ? 3 : ITEMS_PER_ROW * INITIAL_ROWS);
+    update();
+    if (mq.addEventListener) mq.addEventListener('change', update);
+    else mq.addListener(update);
+    return () => {
+      if (mq.removeEventListener) mq.removeEventListener('change', update);
+      else mq.removeListener(update);
+    };
+  }, []);
 
-  const hasMore = filteredProjects.length > ITEMS_PER_ROW * INITIAL_ROWS;
+  const visibleProjects = showAll
+    ? filteredProjects
+    : filteredProjects.slice(0, initialCount);
+
+  const hasMore = filteredProjects.length > initialCount;
 
   return (
     <section id="projects" className="py-20">

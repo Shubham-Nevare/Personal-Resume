@@ -1,16 +1,19 @@
 # Resume UI - Shubham Nevare
 
 **Name:** Shubham Nevare  
-**Role Applied For:** UI Developer Intern at Platione
+**Role Applied For:** Frontend Developer Intern at Platione
 
 ## 🚀 Live Demo
 
-[View Live Site](https://your-github-username.github.io/resumeui) *(Update with your actual hosted URL)*
+[View Live Site](https://shubhamnevare-resume.vercel.app)
+
+[Git Hub Repo](https://github.com/Shubham-Nevare/Personal-Resume)
+
 
 ## 📸 Screenshots
 
-![Desktop View](./screenshots/desktop.png)
-![Mobile View](./screenshots/mobile.png)
+![Desktop View](![alt text](image-1.png))
+![Mobile View](![alt text](image.png))
 
 ## 🛠️ Tech Stack
 
